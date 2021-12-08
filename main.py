@@ -2,6 +2,9 @@ from decimal import *
 getcontext().prec = 7
 G = Decimal(9.81)
 
+# protip
+# ignore the variable names
+# they are shit and i dont care :D
 
 def momentum_PM(momentum, mass):
   momentum = Decimal(momentum)
