@@ -86,4 +86,23 @@ def velocityPE(m, h):
 
   return v
 
-print(kineticEnergy(.6, 80))
+def work(f, d):
+    f = Decimal(f)
+    d = Decimal(d)
+
+    j = f*d
+    return j
+def work_findForce(work, displacement):
+    work = Decimal(work)
+    displacement = Decimal(displacement)
+
+    force = work/displacement
+    return force
+
+def force(m, a):
+    m = Decimal(m)
+    a = Decimal(a)
+    f = m*a
+    return f
+
+print(work_findForce(-40, .5))
