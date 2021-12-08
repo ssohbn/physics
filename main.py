@@ -72,6 +72,12 @@ def kineticEnergy(m, v):
   ke = Decimal(1/2) * m * vv
   return ke
 
+def heightPE(pe, m):
+    pe = Decimal(pe)
+    m = Decimal(m)
+    h = pe/(m*G)
+    return h
+
 def velocityPE(m, h):
   m = Decimal(m)
   h = Decimal(h)
@@ -80,6 +86,4 @@ def velocityPE(m, h):
 
   return v
 
-print(f"""
-{velocityPE(8, 45)}
-""")
+print(kineticEnergy(.6, 80))
